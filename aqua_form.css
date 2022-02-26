@@ -2,26 +2,53 @@ body{
     background-color: rgba(6,118,230,255);
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin: 0;
+    padding: 0;
 }
 .basic{
     background-color: rgba(238,238,238,255);
     border-radius: 5px;
-    width: 80%; max-width: 800px; height: 500px;
+    max-width: 800px; min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-top: 50px;
      }
+@media (max-width: 768px){
+    .basic{
+        background-color: rgba(238,238,238,255);
+        border-radius: 5px;
+        max-width: 500px; max-height: 620px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+    } 
+@media (max-width: 576px){
+    .basic{
+        max-width: 250px; max-height: 1400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+} 
 .box{
     background-color: rgba(255,255,255,255);
     border-radius: 3px;
     margin: 17px;
     padding: 13px;
+    width: 150px;
+    height: 250px;
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+    }
 .page{
     background-color: rgba(6,118,230,255);
     color: white;
@@ -47,10 +74,10 @@ h2{
 }
 
 .text{
-color: rgba(190,194,203,255);
-font-size: 8px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-margin-bottom: 5px;
+    color: rgba(190,194,203,255);
+    font-size: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
 }
 button{
     border-radius: 20 px;
